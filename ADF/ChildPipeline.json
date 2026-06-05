@@ -1,0 +1,11 @@
+{
+  "name": "PL_Table_Load",
+  "properties": {
+    "activities": [
+      {"name":"Determine_Load_Type","type":"IfCondition"},
+      {"name":"Build_Dynamic_Query","type":"SetVariable"},
+      {"name":"Copy_Data","type":"Copy"},
+      {"name":"Update_Watermark","type":"StoredProcedure"}
+    ]
+  }
+}

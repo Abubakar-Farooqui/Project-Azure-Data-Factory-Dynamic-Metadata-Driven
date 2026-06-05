@@ -1,0 +1,10 @@
+{
+  "name": "PL_Master_Load",
+  "properties": {
+    "activities": [
+      {"name": "Lookup_Metadata","type": "Lookup"},
+      {"name": "ForEach_Table","type": "ForEach"},
+      {"name": "Execute_Child_Pipeline","type": "ExecutePipeline"}
+    ]
+  }
+}
