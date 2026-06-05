@@ -1,0 +1,13 @@
+@concat(
+'SELECT * FROM ',
+pipeline().parameters.SourceTable,
+' WHERE ',
+pipeline().parameters.WatermarkColumn,
+' >= ''',
+pipeline().parameters.BackfillStartDate,
+''' AND ',
+pipeline().parameters.WatermarkColumn,
+' < ''',
+pipeline().parameters.BackfillEndDate,
+''''
+)

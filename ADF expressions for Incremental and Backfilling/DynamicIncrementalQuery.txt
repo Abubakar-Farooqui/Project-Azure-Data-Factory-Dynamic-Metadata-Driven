@@ -1,0 +1,9 @@
+@concat(
+'SELECT * FROM ',
+pipeline().parameters.SourceTable,
+' WHERE ',
+pipeline().parameters.WatermarkColumn,
+' > ''',
+pipeline().parameters.LastWatermarkValue,
+''''
+)
