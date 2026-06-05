@@ -1,0 +1,5 @@
+TableName,SourceSchema,SourceTable,LoadType,WatermarkColumn,LastWatermarkValue,TargetPath,IsActive
+Customer,dbo,Customer,Initial,UpdatedDate,,raw/customer/,1
+Orders,dbo,Orders,Incremental,ModifiedDate,2025-05-01,raw/orders/,1
+Product,dbo,Product,Incremental,UpdatedOn,2025-05-15,raw/product/,1
+Sales,dbo,Sales,Incremental,ModifiedDate,2025-05-20,raw/sales/,1
